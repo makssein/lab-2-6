@@ -8,12 +8,12 @@ int main() {
     for(int i = 0; i < 10; i++){
         list.push_back(rand()%1000);
     }
-
+    list.sort();
     for (auto element : list)
         std::cout << " " << element;
     std::cout << std::endl;
 
-    ////testet
+
 
     return 0;
 }
