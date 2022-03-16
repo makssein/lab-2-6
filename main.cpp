@@ -29,10 +29,8 @@ void quickSort(int a, int b, std::vector<int>& mas) {
     quickSort(r, b, mas);
 }
 
-int binarySearch(int* mas, int s, int n, int k){
-    if(k<mas[s]) return -1;
+int binarySearch(std::vector<int>& mas, int s, int n, int k){
     if(k==mas[s]) return 0;
-    if(k>mas[s]) return -1;
 
     int a = s;
     int b = n;
@@ -66,6 +64,9 @@ int main() {
     mas.emplace(mas.begin()+5, 999);
     mas.erase(mas.begin()+5);
 
+    int number = rand()%1000;
+
+    std::cout << binarySearch(mas,0,mas.size(),number);
 
     return 0;
 }
