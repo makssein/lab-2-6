@@ -9,8 +9,8 @@ int main() {
         list.push_back(rand()%1000);
     }
 
-    for (auto c : list)
-        std::cout << " " << c;
+    for (auto element : list)
+        std::cout << " " << element;
     std::cout << std::endl;
 
     return 0;
