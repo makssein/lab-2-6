@@ -6,7 +6,7 @@ void quickSort(int a, int b, std::vector<int>& mas) {
         return;
     }
     int m, k, l, r;
-    m = rand() % (b - a + 1) + a;
+    m = ((rand()*rand())%(b-a+1)) + a;
     k = mas[m];
     l = a - 1;
     r = b + 1;
